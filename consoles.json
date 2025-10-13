@@ -1,0 +1,23 @@
+[
+  {
+    "title": "PlayStation 5 Standard",
+    "images": ["images/ps5-1.jpg", "images/ps5-2.jpg"],
+    "price": "450000 FCFA",
+    "badge": "Neuf",
+    "etat": "disponible"
+  },
+  {
+    "title": "Xbox Series X",
+    "images": ["images/xbox-1.jpg", "images/xbox-2.jpg"],
+    "price": "430000 FCFA",
+    "badge": "Vendu",
+    "etat": "vendu"
+  },
+  {
+    "title": "Nintendo Switch OLED",
+    "images": ["images/switch-1.jpg", "images/switch-2.jpg"],
+    "price": "320000 FCFA",
+    "badge": "Occasion",
+    "etat": "disponible"
+  }
+]

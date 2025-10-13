@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ADΛGΛMING</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="promo-banner">
+  <div class="promo-text">
+    ⚠️ Les articles en promotion bénéficient déjà d’un tarif exceptionnel par rapport à leur prix d’origine.
+
+💬 Si le prix d’un produit ne vous convient, n’hésitez pas à me contacter — je suis ouvert à toute négociation raisonnable.
+
+📌 Merci de me contacter uniquement si vous êtes prêt à acheter. Les prix sont déjà affichés sur le site, inutile de me solliciter juste pour les connaître.
+
+📱 Vous pouvez me joindre via WhatsApp ou la messagerie intégrée du site ADAGAMING. Je réponds rapidement aux demandes sérieuses.
+
+  </div>
+</div>
+
+
+  <div class="neon-background"></div>
+  <canvas id="stars-canvas"></canvas>
+
+  <header>
+    <div class="text-center my-3">
+      <button onclick="toggleGlitchMode()" class="btn btn-dark">🎛️ Mode Glitch</button>
+    </div>
+    <h1 class="brand-title">🎮 ADΛGΛMING 🎮</h1>
+    <p class="brand-sub">Bienvenue sur ma boutique</p>
+  </header>
+
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+      <a class="navbar-brand" href="#">
+        <img src="images/logo-glitch.png" alt="Logo ADAGAMING" class="logo-glitch">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+        <a href="console.html" class="btn-console">🎮 Consoles</a>
+          
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="mb-4 text-center">
+    <h2 class="slogan-glitch">ADAGAMING — La tech qui joue fort,<br><span>sans exploser ton budget.</span></h2>
+  </div>
+
+  <div class="container text-center mt-4">
+    <input type="text" id="search-input" class="form-control" placeholder="🔍 Rechercher un article..." oninput="filtrerArticles()">
+  </div>
+
+  <div id="alert-container" class="alert alert-danger text-center d-none" role="alert">
+    ⚠️ Erreur de chargement des articles. Vérifie le fichier <strong>articles.json</strong>.
+  </div>
+
+  <section id="nouveaux-articles" class="container">
+    <h2 class="section-title">🆕 Nouveautés</h2>
+    <div id="nouveaux-container" class="row"></div>
+  </section>
+
+  <section id="promos-articles" class="container">
+    <h2 class="section-title">🔥 Promotions</h2>
+    <div id="promos-container" class="row"></div>
+  </section>
+
+  <div class="container">
+    <p id="result-count" class="text-center text-light mt-3 fw-bold"></p>
+    <div class="row row-cols-1 row-cols-md-4 g-4" id="article-container"></div>
+    <div class="voir-plus">
+      <button class="btn btn-dark" onclick="loadMore()">Voir plus</button>
+    </div>
+  </div>
+
+  <!-- Bouton WhatsApp masqué -->
+  <a id="whatsapp-link" class="whatsapp-float">💬</a>
+
+  <!-- Section masquée qui s'affiche après clic -->
+  <section id="services" class="section-services py-5" style="display: none;">
+    <div class="container">
+      <h2 class="text-center glitch-title">Ce que nous faisons</h2>
+      <p class="lead text-center text-muted">Expertise tech, gaming, et accompagnement personnalisé.</p>
+      <div class="row mt-4">
+        <div class="col-md-6">
+          <h4 class="fw-bold">🎮 Crack & optimisation consoles</h4>
+          <p>Déblocage et optimisation de PS Vita, Switch, PS4, PS5... pour une expérience gaming sans limites.</p>
+          <h4 class="fw-bold mt-4">🧩 Accessoires gaming</h4>
+          <p>Vente de manettes, casques, câbles et équipements stylés pour consoles et PC.</p>
+          <h4 class="fw-bold mt-4">🖥️ Montage PC gamer</h4>
+          <p>Assemblage sur mesure de PC gaming puissants, avec conseils et optimisation.</p>
+          <h4 class="fw-bold mt-4">📺 IPTV & Streaming</h4>
+          <p>Installation et configuration d’abonnements IPTV avec VPN pour une fluidité maximale.</p>
+        </div>
+        <div class="col-md-6">
+          <h4 class="fw-bold">🌐 Création de site web</h4>
+          <p>Sites immersifs, modernes et adaptés à votre activité. Design, technique et impact visuel.</p>
+          <h4 class="fw-bold mt-4">🧠 Conseil & assistance</h4>
+          <p>Accompagnement lors de l’achat de consoles ou PC, avec recommandations personnalisées.</p>
+          <h4 class="fw-bold mt-4">⌨️ Accessoires PC</h4>
+          <p>Vente de claviers, souris et équipements gamer pour une configuration stylée et performante.</p>
+          <h4 class="fw-bold mt-4">🎁 Cartes cadeaux</h4>
+          <p>Offrez des cartes cadeaux personnalisées pour vos proches, valables sur tous nos produits.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="text-center mt-5">
+    <a href="#" onclick="toggleServices(event)" class="btn btn-warning">🛠 Nos services</a>
+    <a href="https://www.google.com/maps?q=6.219530,1.169544" target="_blank" class="btn btn-outline-info">📍 Notre localisation</a>
+  </div>
+
+  <div class="text-center my-4">
+  <button onclick="afficherPanier()" class="btn btn-info">🛒 Voir mon panier</button>
+  <button onclick="afficherFavoris()" class="btn btn-dark mb-3">🧲 Voir mes favoris</button>
+</div>
+<div id="panier-container" class="container d-none">
+  <h3>🧾 Articles sélectionnés</h3>
+  <ul id="panier-list" class="list-group mb-3"></ul>
+  <a id="panier-whatsapp" href="#" target="_blank" class="btn btn-success w-100">📦 Commander tout</a>
+  <button onclick="viderPanier()" class="btn btn-outline-danger w-100 mt-2">🧹 Vider le panier</button>
+</div>
+
+
+
+  <footer>
+    © 2025 ADΛGΛMING | Contact : WhatsApp direct
+  </footer>
+
+  <div id="lightbox" class="lightbox">
+    <span class="close-btn" onclick="closeLightbox()">×</span>
+    <div class="lightbox-content">
+      <img id="lightbox-img" src="" alt="Zoom produit">
+      <div class="lightbox-info">
+        <h3 id="lightbox-title"></h3>
+        <p id="lightbox-price"></p>
+        <div id="lightbox-badge"></div>
+      </div>
+      <button id="lightbox-prev">←</button>
+      <button id="lightbox-next">→</button>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="script.js"></script>
+
+  
+  <script>
+    const encoded = "aHR0cHM6Ly93YS5tZS8yMjg5MTI2OTcxNg==";
+    const decoded = atob(encoded);
+    const whatsappBtn = document.getElementById("whatsapp-link");
+    whatsappBtn.setAttribute("href", decoded);
+    whatsappBtn.setAttribute("target", "_blank");
+  </script>
+
+  <!--Start of Tawk.to Script-->
+<script type="text/javascript">
+var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+(function(){
+var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+s1.async=true;
+s1.src='https://embed.tawk.to/674f0e012480f5b4f5a72486/1ie6ctdnq';
+s1.charset='UTF-8';
+s1.setAttribute('crossorigin','*');
+s0.parentNode.insertBefore(s1,s0);
+})();
+</script>
+<!--End of Tawk.to Script-->
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Consoles en vente</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js" defer></script>
+  <script src="console.js" defer></script>
+</head>
+<body>
+  <h2 class="glitch-title">🎮 Consoles disponibles</h2>
+  <div id="console-container" class="grid-produits"></div>
+
+<!-- Lightbox amélioré avec titre et prix -->
+<div id="lightbox" class="lightbox">
+  <span class="close-btn" onclick="fermerLightbox()">✖</span>
+  <span class="nav-btn left" onclick="imagePrecedente()">◀</span>
+  <div class="lightbox-content">
+    <img id="lightbox-img" src="" alt="Console zoomée">
+    <div class="lightbox-info">
+      <h2 id="lightbox-title">Titre</h2>
+      <p id="lightbox-price">Prix</p>
+    </div>
+  </div>
+  <span class="nav-btn right" onclick="imageSuivante()">▶</span>
+</div>

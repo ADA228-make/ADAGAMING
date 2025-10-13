@@ -1,0 +1,163 @@
+[
+  {
+    "title": "Android Tv Box",
+    "desc": "Changer votre simple television en une smart tv inteligent doté de systeme android. version: 12 ram:2gb rom:16gb",
+    "price": "15 000 FCFA",
+    "images": ["images/android_tv_box.jpg", "images/android_tv_box_3.jpg"],
+    "stock": 0,
+    "etat": "neuf",
+    "nouveau": true
+  },
+  {
+    "title": "Mini Dock Switch",
+    "desc": "connecter votre nintendo switch V1,V2 et oled a votre télévision grace a se mini dock compact.",
+    "price": "8 000 FCFA",
+    "originalPrice": "15 000 FCFA",
+    "images": ["images/mini dock station switch (2).jpg", "images/mini dock station switch.jpg"],
+    "stock": 1,
+    "etat": "neuf",
+    "promo": true
+  },
+  {
+    "title": "Boitier disque du UC",
+    "desc": "Boitier pour les disques dur uc ( gros disques dur et petit disque dur) 2,5 et 3,5 pouces . capacité supporter par cette boitier: 24 Terra ",
+    "price": "15 000 FCFA",
+    "images": ["images/boitier disque dur uc.jpg", "images/boitier disque dur uc (2).jpg"],
+    "stock": 0,
+    "etat": "neuf"
+  },
+  {
+    "title": "Batterie Manette XBOX ONE , X , XS",
+    "desc": "batterie pour les manettes xbox one , s et xs.",
+    "price": "7 000 FCFA",
+    "images": ["images/batterie xbox one s x (2).jpg", "images/batterie xbox one s x.jpg"],
+    "stock": 2,
+    "etat": "neuf"
+  },
+  {
+    "title": "Manette PC san fil",
+    "desc": "Manette PC san fil , plug and play(ne néccéssite aucune configuration), Manette Compatible a tous les jeux de PC ",
+    "price": "8 000 FCFA",
+    "images": ["images/manette pc san fil (2).jpg", "images/manette pc san fil.jpg"],
+    "stock": 2,
+    "etat": "neuf"
+  },
+  {
+    "title": "Manette playstation 3",
+    "desc": "manette playstation 3, dualshock 3.",
+    "price": "6 000 FCFA",
+    "images": ["images/manette ps3.jpg", "images/manette ps3 (2).jpg"],
+    "stock": 0,
+    "etat": "neuf"
+  },
+  {
+    "title": "Station de charge Playstation 5",
+    "desc": "recharge vos manettes en dualmode, compatible manette PS5 standard et edge.",
+    "price": "10 000 FCFA",
+    "originalPrice": "15 000 FCFA",
+    "images": ["images/station de charge ps5 (2).jpg", "images/station de charge ps5.jpg"],
+    "stock": 1,
+    "etat": "neuf",
+    "promo": true
+  },
+  {
+    "title": "Clavier Mécanique",
+    "desc": "Clavier Mécanique tres propre; pour les devélopeur, informaticien et gameur.",
+    "price": "15 000 FCFA",
+    "images": ["images/clavier mecanique (3).jpg", "images/clavier mecanique (4).jpg"],
+    "stock": 0,
+    "etat": "occasion"
+  },
+  {
+    "title": "Clavier Mécanique",
+    "desc": "Clavier Mécanique tres propre; pour les devélopeur, informaticien et gameur.",
+    "price": "15 000 FCFA",
+    "images": ["images/clavier mecanique.jpg", "images/clavier mecanique (2).jpg"],
+    "stock": 0,
+    "etat": "rupture"
+  },
+  {
+    "title": "Sticker Pour la playstation 4 Slim  ",
+    "desc": "protection et styles, protéger votre console PS4 slim des raillures avec cette sticker stylé  .",
+    "price": "3500 FCFA",
+    "images": ["images/sticker ps4 slim.jpg", "images/sticker ps4 slim (2).jpg"],
+    "stock": 2,
+    "etat": "neuf",
+    "nouveau": true
+  },
+  {
+   "title": "Clé Wifi",
+    "desc": "clé wifi pour les unités centrales(UC) et PC portable: wifi 4Ghz.",
+    "price": "4 000 FCFA",
+    "images": ["images/clé wifi (2).jpg", "images/clé wifi.jpg"],
+    "stock": 4,
+    "etat": "neuf"
+  },
+  {
+    "title": "Mémoire Boot PS2",
+    "desc": "démarer et sauvegarder vos jeux sur PS2 grace a cette carte mémoire.",
+    "price": "4 000 FCFA",
+    "images": ["images/memoire ps2.jpg", "images/memoire ps2 (2).jpg"],
+    "stock": 2,
+    "etat": "neuf"
+  },
+  {
+    "title": "Manette playstation 4",
+    "desc": "manette playstation 4, dualshock 4.",
+    "price": "10 000 FCFA",
+    "images": ["images/manette ps4.jpeg", "images/manette ps4.jpg"],
+    "stock": 0,
+    "etat": "neuf"
+  },
+  {
+    "title": "Manette San fil type PS4",
+    "desc": "Manette de qualité , compatible PS4 et PC ",
+    "price": "18 000 FCFA",
+    "images": ["images/manette t29.jpg", "images/manette t29 (2).jpg"],
+    "stock": 0,
+    "etat": "neuf",
+    "nouveau": true
+  },
+  {
+   "title": "Manette filaire XBOX360",
+    "desc": "manette filaire XBOX360 , compatible avec la console XBOX360 et PC.",
+    "price": "7 500 FCFA",
+    "images": ["images/manette filaire xbox 360 (2).jpg", "images/manette filaire xbox 360.jpg"],
+    "stock": 0,
+    "etat": "neuf"
+  },
+  {
+   "title": "Manette San Fil Type PS4 ",
+    "desc": "manette de qualité,ce bijou est une manette alternatifs aux manettes officiel de sony ; il fonctionne tres bien sur les ps4 et est reconnu comme une manette officiel XBOX ONE sur PC.",
+    "price": "18 000 FCFA",
+    "images": ["images/manette type ps4 (2).jpg", "images/manette type ps4.jpg"],
+    "stock": 0,
+    "etat": "neuf"
+  },
+  {
+   "title": "Manette San Fil XBOX360",
+    "desc": "manette san fil XBOX360.",
+    "price": "15 000 FCFA",
+    "images": ["images/manette xbox 360 san fil (2).jpg", "images/manette xbox 360 san fil.jpg"],
+    "stock": 0,
+    "etat": "neuf"
+  },
+  {
+   "title": "Souris  Logitech",
+    "desc": "souris san fil logitech.",
+    "price": "8 000 FCFA",
+    "images": ["images/souris logitech (2).jpg", "images/souris logitech.jpg"],
+    "stock": 0,
+    "etat": "neuf"
+  },
+  {
+    "title": "Microphone Pour PC",
+    "desc": "Microphine usb style gameur pour PC.",
+    "price": "10 000 FCFA",
+    "originalPrice": "20 000 FCFA",
+    "images": ["images/microphone (2).jpg", "images/microphone.jpg"],
+    "stock": 1,
+    "etat": "neuf",
+    "promo": true
+  }
+]

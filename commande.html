@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Formulaire de commande</title>
+  <link rel="stylesheet" href="style.css"> <!-- Ton fichier CSS -->
+  <script src="commande.js" defer></script> <!-- Ton script JS -->
+</head>
+<body>
+  <form id="form-commande" onsubmit="envoyerCommande(); return false;">
+    <h2>Formulaire de commande</h2>
+
+    <label>Nom :</label>
+    <input type="text" id="nom" required>
+
+    <label>Prénom :</label>
+    <input type="text" id="prenom" required>
+
+    <label>Article :</label>
+    <input type="text" id="article" readonly>
+
+    <label>Prix d’origine :</label>
+    <input type="text" id="prixOriginal" readonly>
+
+    <label>Proposez votre prix :</label>
+    <p class="form-warning">
+      ⚠️ Le prix que vous proposez ne sera pas automatiquement accepté.  
+      Si votre offre est jugée non raisonnable, elle pourra être refusée.  
+      Merci de bien réfléchir avant toute proposition.
+    </p>
+    <input type="number" id="prixClient" min="100" required>
+
+    <label>Souhaitez-vous une livraison ?</label>
+    <select id="livraison" onchange="toggleLocalisation()">
+      <option value="non">Non, je viens récupérer</option>
+      <option value="oui">Oui, je veux être livré</option>
+    </select>
+    <p class="form-warning">
+      🚚 Les frais de livraison commencent à partir de 1000 FCFA.  
+      Ce tarif peut varier selon votre localisation exacte.  
+      Merci de prendre cela en compte avant de valider votre commande.
+    </p>
+
+
+    <div id="zone-localisation" style="display:none;">
+      <label>Votre localisation :</label>
+      <input type="text" id="localisation">
+    </div>
+
+    <p id="livraison-info">Livraison à partir de 1000 FCFA </p>
+
+    <button type="submit" class="btn btn-success">📤 Envoyer par WhatsApp</button>
+  </form>
+</body>
+</html>
